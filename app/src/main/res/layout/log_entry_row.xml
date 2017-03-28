@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/locationTV"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTV"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:layout_alignBaseline="@+id/sourceTV"
+        android:layout_alignBottom="@+id/sourceTV"
+        android:layout_toEndOf="@+id/sourceTV"
+        android:layout_marginLeft="20dp"
+        android:textSize="10sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourceTV"
+        android:layout_marginLeft="0dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_below="@+id/locationTV"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/extraTV"
+        android:layout_below="@+id/sourceTV"
+        android:layout_alignParentStart="true"
+        android:textSize="10sp" />
+</RelativeLayout>
