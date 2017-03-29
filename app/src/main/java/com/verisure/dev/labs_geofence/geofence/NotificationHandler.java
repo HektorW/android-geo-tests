@@ -24,6 +24,15 @@ public class NotificationHandler {
                         ? entry.location
                         : String.format("%s, %s", entry.location, entry.extra)
                 )
+                .setSmallIcon(R.drawable.ic_wifi_black_24dp)
+        );
+    }
+
+    static void showNotification (Context ctx, String title, String text) {
+        showNotification(ctx, new NotificationCompat.Builder(ctx)
+            .setSmallIcon(R.drawable.ic_stat_layout)
+            .setContentTitle(title)
+            .setContentText(text)
         );
     }
 
@@ -43,11 +52,10 @@ public class NotificationHandler {
             .notify(
                 0,
                 notificationBuilder
-                    .setSmallIcon(R.drawable.ic_wifi_black_24dp)
                     .setPriority(NotificationCompat.PRIORITY_HIGH)
                     .setAutoCancel(true)
-                    .setLights(Color.BLUE, 3000, 3000)
-                    .setVibrate(new long[] { 1000, 1000 })
+                    .setLights(Color.YELLOW, 3000, 3000)
+                    .setVibrate(new long[] { 300, 300, 300, 300 })
                     .addAction(
                         R.drawable.ic_bluetooth_connected_black_24dp,
                         "Rate",
